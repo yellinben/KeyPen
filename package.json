@@ -1,0 +1,12 @@
+{
+  "name": "keypen",
+  "version": "0.0.1",
+  "description": "Custom keyboard shortcuts for CodePen",
+  "scripts": {
+    "dev": "webextension-toolbox dev",
+    "build": "webextension-toolbox build"
+  },
+  "devDependencies": {
+    "webextension-toolbox": "latest"
+  }
+}
