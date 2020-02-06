@@ -19,13 +19,26 @@ import 'mousetrap/plugins/global-bind/mousetrap-global-bind';
   };
 
   const shortcuts = {
-    ".console-clear-button": "ctrl+l"
+    ".console-clear-button": "ctrl+l",
+    ".console-toggle-button": null,
+    ".heart-button": null,
+    "#left-layout": null,
+    "#right-layout": null,
+    "#top-layout": null,
+    "#pen-link": null,
+    "#details-link": null,
+    "#full-link": null,
+    "#debug-link": null,
+    "#tidy-html": null,
+    "#tidy-css": null,
+    "#tidy-js": null
   };
 
   const registerShortcuts = () => {
-    Object.entries(shortcuts).forEach(([action, keys]) =>
-      Mousetrap.bindGlobal(keys, () => clickElement(action))
-    );
+    Object.entries(shortcuts).forEach(([action, keys]) => {
+      if (keys && keys.length)
+        Mousetrap.bindGlobal(keys, () => clickElement(action));
+    });
   };
 
   registerShortcuts();
