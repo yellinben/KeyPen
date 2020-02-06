@@ -29,8 +29,6 @@
         "styles/contentscript.css"
       ],
       "js": [
-        "mousetrap.js",
-        "mousetrap-global-bind.js",
         "scripts/contentscript.js"
       ],
       "run_at": "document_end",
